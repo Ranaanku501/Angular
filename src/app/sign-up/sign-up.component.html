@@ -19,7 +19,7 @@
 
     <div class="form-group">
         <input type="number" class="form-control required" onKeyPress="if(this.value.length==10) return false;" required minlength="10" formControlName="Phone_Number"
-        placeholder="Phone Number">
+        placeholder="Phone Number" min = "0">
         <div class="text-danger"
         *ngIf="form.controls['Phone_Number'].hasError('required')  && form.controls['Phone_Number'].touched">
        *Please enter Phone Number.
@@ -29,7 +29,7 @@
 
     <div class="form-group">
         <input type="number" class="form-control required" onKeyPress="if(this.value.length==4) return false;" formControlName="Amount"
-        placeholder="Amount">
+        placeholder="Amount" min = "4000" max = "5000">
         
         <div class="text-danger"
         *ngIf="form.controls['Amount'].hasError('required')  && form.controls['Amount'].touched">

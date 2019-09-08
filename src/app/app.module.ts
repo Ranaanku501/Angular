@@ -13,6 +13,7 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
+import { CommonLoyoutComponent } from './common-loyout/common-loyout.component';
 // import { SlickCarouselModule } from './ngx-slick-carousel';
 
 @NgModule({
@@ -26,6 +27,7 @@ import { ContactComponent } from './contact/contact.component';
     AboutUsComponent,
     HomeComponent,
     ContactComponent,
+    CommonLoyoutComponent,
   ],
   imports: [
     BrowserModule,
